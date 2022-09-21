@@ -37,4 +37,4 @@ git remote add origin https://github.com/Lauane-Santos/trabalhoPtas.git
 # Enviar código
 git push origin main -f
 
- 
+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
