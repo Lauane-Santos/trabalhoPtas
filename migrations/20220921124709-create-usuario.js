@@ -11,8 +11,10 @@ module.exports = {
       nome: {
         type: Sequelize.STRING
       },
+      usuario: {
+        type: Sequelize.STRING
+      },
       senha: {
-        allowNull: false,
         type: Sequelize.STRING
       },
       createdAt: {
@@ -22,8 +24,7 @@ module.exports = {
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE,
-        defaultValue: Sequelize.fn('NOW')
+        type: Sequelize.DATE
       }
     });
   },
