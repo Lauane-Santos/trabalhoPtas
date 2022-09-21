@@ -50,6 +50,11 @@ app.get('/', async function(req, res){
   res.render("home")
 })
 
+app.get('/listar', async function(req, res){
+  const users = await usuario.findAll()
+  res.render("listar", { users });
+})
+
 app.post('/logar', (req, res) => {
   if(req.body.user === 'lauane' && req.body.password === '123'){
     const id = 1;
